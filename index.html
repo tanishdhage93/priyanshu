@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC School - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader-content">
+            <div class="spinner"></div>
+            <h3>Loading ABC School...</h3>
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div class="container">
+            <h1>ABC School</h1>
+            <p>Learn Today, Lead Tomorrow</p>
+        </div>
+    </header>
+    <nav>
+        <div class="container">
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">About</a>
+            <a href="academics.html">Academics</a>
+            <a href="events.html">Events</a>
+        </div>
+    </nav>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h2>Welcome to ABC School</h2>
+                <p>ABC School provides quality education and fosters the overall development of students in a nurturing environment. With a legacy of excellence since 2000, we are committed to shaping the future leaders of tomorrow.</p>
+                <a href="about.html" class="btn">Learn More</a>
+            </div>
+        </section>
+        <section class="overview">
+            <div class="container">
+                <h2>School Overview</h2>
+                <p>Established in 2000, ABC School has been a cornerstone of education in Nagpur, offering comprehensive programs from primary to higher secondary levels. Our school is affiliated with the Maharashtra State Board and follows a curriculum that balances academic rigor with extracurricular activities.</p>
+                <p>We pride ourselves on our diverse student body, experienced faculty, and state-of-the-art facilities that create an ideal learning environment.</p>
+            </div>
+        </section>
+        <section class="news">
+            <div class="container">
+                <h2>Latest News</h2>
+                <div class="news-item">
+                    <h3>ABC School Wins Inter-School Debate Competition</h3>
+                    <p>Our students brought home the trophy in the regional debate competition, showcasing their eloquence and critical thinking skills.</p>
+                    <small>Posted on April 15, 2026</small>
+                </div>
+                <div class="news-item">
+                    <h3>New STEM Lab Inaugurated</h3>
+                    <p>The school has launched a cutting-edge Science, Technology, Engineering, and Mathematics lab to enhance practical learning.</p>
+                    <small>Posted on April 10, 2026</small>
+                </div>
+            </div>
+        </section>
+        <section class="testimonials">
+            <div class="container">
+                <h2>What Parents Say</h2>
+                <div class="testimonial">
+                    <p>"ABC School has transformed my child's confidence and academic performance. The teachers are dedicated and the environment is supportive."</p>
+                    <cite>- Mrs. Sharma, Parent</cite>
+                </div>
+                <div class="testimonial">
+                    <p>"The extracurricular activities have helped my son develop leadership skills. Highly recommend ABC School."</p>
+                    <cite>- Mr. Patel, Parent</cite>
+                </div>
+            </div>
+        </section>
+        <section class="gallery">
+            <div class="container">
+                <h2>Gallery</h2>
+                <div class="gallery-grid">
+                    <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300&q=80" alt="School Building Exterior">
+                    <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300&q=80" alt="Classroom">
+                    <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300&q=80" alt="Students Playing Football on School Ground">
+                    <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300&q=80" alt="Science Lab with Students Working">
+                </div>
+            </div>
+        </section>
+        <section class="enrollment">
+            <div class="container">
+                <h2>Enrollment Inquiry</h2>
+                <p>Interested in joining ABC School? Fill out the form below and we'll get back to you with all the information you need.</p>
+                <form id="inquiryForm" onsubmit="submitInquiry(event)">
+                    <div class="form-group">
+                        <label for="name">Full Name:</label>
+                        <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" required placeholder="Enter your email address">
+                    </div>
+                    <div class="form-group">
+                        <label for="grade">Interested Grade:</label>
+                        <select id="grade" name="grade" required>
+                            <option value="">Select Grade</option>
+                            <option value="1">Class 1</option>
+                            <option value="2">Class 2</option>
+                            <option value="3">Class 3</option>
+                            <option value="4">Class 4</option>
+                            <option value="5">Class 5</option>
+                            <option value="6">Class 6</option>
+                            <option value="7">Class 7</option>
+                            <option value="8">Class 8</option>
+                            <option value="9">Class 9</option>
+                            <option value="10">Class 10</option>
+                            <option value="11">Class 11</option>
+                            <option value="12">Class 12</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message (Optional):</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Any specific questions or information you'd like to share"></textarea>
+                    </div>
+                    <button type="submit" class="btn">Submit Inquiry</button>
+                </form>
+                <div id="inquiryMessage" class="message"></div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 ABC School. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+body {
+    font-family: Arial;
+    margin: 0;
+    background: #f0f0f0;
+}
+
+header {
+    background: #002147;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+nav {
+    background: #004080;
+    text-align: center;
+    padding: 10px;
+}
+
+nav button {
+    margin: 5px;
+    padding: 10px 15px;
+    border: none;
+    background: white;
+    cursor: pointer;
+}
+
+nav button:hover {
+    background: #ddd;
+}
+
+.container {
+    padding: 20px;
+    background: white;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+section {
+    display: none;
+}
+
+section.active {
+    display: block;
+}
+
+img {
+    width: 200px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+button {
+    padding: 10px;
+    background: #004080;
+    color: white;
+    border: none;
+}
+
+footer {
+    text-align: center;
+    background: #002147;
+    color: white;
+    padding: 10px;
+}
+function showPage(pageId) {
+    let sections = document.querySelectorAll("section");
+    sections.forEach(section => {
+        section.classList.remove("active");
+    });
+
+    document.getElementById(pageId).classList.add("active");
+}
+
+function submitForm(event) {
+    event.preventDefault();
+    document.getElementById("message").innerText = "Your message has been sent successfully!";
+}
